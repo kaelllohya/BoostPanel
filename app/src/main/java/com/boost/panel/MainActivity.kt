@@ -112,7 +112,7 @@ class MainActivity : Activity() {
         }
         val card = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL; clipToOutline = true
-            background = GradientDrawable().apply { cornerRadius = dpf(18f); setColor(0xFF0F2A55); setStroke(dp(2), cyan) }
+            background = GradientDrawable().apply { cornerRadius = dpf(18f); setColor(0xFF0F2A55.toInt()); setStroke(dp(2), cyan) }
         }
         val banner = FrameLayout(this).apply {
             background = GradientDrawable(GradientDrawable.Orientation.TL_BR, intArrayOf(0xFF2A6FD6.toInt(), 0xFF0F2A55.toInt()))
